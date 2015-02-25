@@ -23,6 +23,9 @@ is happening.
 But no matter the case, give credit where credit is due.
 
 # Change Log
+## 1.1
+Added a `blame` attribute to each of the annotations so that you know who to
+ blame if the code doesn't work.
 ## 1.0
 The initial release.  Contains just the basics: `@Attribution` and `@Stolen`.
 

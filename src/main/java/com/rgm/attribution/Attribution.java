@@ -10,7 +10,7 @@ import java.lang.annotation.Inherited;
  * Useful for when you want to track where you got an idea from.
  *
  * @author Rob Mills
- * @version 1.0
+ * @version 1.1
  * @since 1.0
  */
 @Documented
@@ -19,22 +19,24 @@ public @interface Attribution {
 
 	/**
 	 * A url for where to find the cited code.
-	 *
-	 * @return
 	 */
 	String url() default "";
 
 	/**
 	 * The license that the cited code provides.
-	 *
-	 * @return the cited code's License
 	 */
 	License license() default License.NONE;
 
 	/**
 	 * The date that the code was cited.
-	 *
-	 * @return
 	 */
 	String dateCited() default "";
+
+	/**
+	 * The name of the developer who originally wrote the code and person to
+	 * blame if it doesn't work.
+	 *
+	 * @since 1.1
+	 */
+	String blame() default "";
 }
